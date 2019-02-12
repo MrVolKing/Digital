@@ -17,8 +17,8 @@
     &__left{
         display: flex;
         .icn{
-            width: 50px;
-            height: 50px;
+            width: rem(50);
+            height: rem(50);
             border-radius: 50%;
             border: 1px solid rgba(0,0,0,.4);
             opacity: .4;
@@ -26,6 +26,9 @@
             align-items: center;
             justify-content: center;
             margin-right: 19px;
+            img{
+                width: rem(20);
+            }
         }
     }
 
@@ -61,6 +64,52 @@
         span{
             font-size: rem(18);
             color: #466173;
+        }
+    }
+}
+
+
+@media screen and (max-width:769px){
+    .footer{
+        padding: 40px 0 20px 0;
+
+        &__top{
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-bottom: 30px;
+        }
+
+        &__midle{
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            span{
+                margin-bottom: 18px;
+                font-size: 14px;
+            }
+        }
+
+        &__bottom{
+            span{
+                font-size: 16px;
+            }
+        }
+
+    }
+}
+
+
+@media screen and (max-width:420px){
+    .footer{
+        padding: 20px 0 10px 0;
+
+        &__left{
+            margin-bottom: 20px;
+        }
+
+        &__right{
+            a{
+                margin-bottom: 10px;
+            }
         }
     }
 }

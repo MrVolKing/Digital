@@ -18,3 +18,19 @@
         }
     }
 }
+
+@media screen and (max-width:769px){
+    .sect_bg{
+        padding: 40px 0 70px 0;
+
+        .block{
+            &__left{
+                margin-bottom: 50px;
+            }
+
+            &__right{
+                padding: 0;
+            }
+        }
+    }
+}

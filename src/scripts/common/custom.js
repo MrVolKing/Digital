@@ -54,10 +54,13 @@ $(document).ready(() => {
 
 
     // slider
-    var menu1 = ['Customers data storage suitable for <b>AI-driven Marketing</b> ', '<b>AI-suggested best offer</b>, creative, and subject-line for one-on-one communication', '<b>Intelligent auto segments</b> driven by specific offers for highly effective direct marketing ', '<b>Next best offer recommendation</b> delivered by machine learning for your scheduled segments ', '5'];
+    var menu1 = ['Хранение информации о клиентах <b>в подходящем для AI формате</b> ', '<b>Выбор предложения</b>, креатива, заголовка для каждого получателя с помощью AI', '<b>Построение на основе AI сегментов</b>  для массовых коммуникаций под конкретные предложения', '<b>Выбор с помощью AI</b> наилучших предложений под созданные сегменты'];
+    var menu2 = ['<b>Неограниченный набор условий</b> для персонализации путешествия клиента', '<b>Автовыбор контента</b> для каждого получателя с помощью AI', '<b>Реакция на действия клиента</b> в других системах (CRM, сайт)', 'Автоматизация кросс-канальных коммуникаций <b>любой сложности</b>'];
+    var menu3 = ['Возможность использовать свои сервера для отправки email или <b>транзакционный API</b>', '<b>Продвинутый</b> планировщик массовых рассылок ', '<b>Inbox-мониторинг</b> и гибкое управление рассылками', '<b>Автоматическая проверка</b> базы по внутренним и внешним black-листам', '<b>Уникальная инфраструктура</b>, позволяющая AI подключиться к управлению маркетингом'];
+    var menu4 = ['<b>Детальный контроль</b> дохода с каждой кампании, предложения, креатива', '<b>Контроль качества</b> доставки по каналам рассылок', '<b>Кастомные параметры</b> для отслеживания внешних событий и условий'];
+    
     var swiper = new Swiper('.swiper-container', {
         loop: false,
-        // init: false,
         slidesPerView: 1,
         centeredSlides: false,
         navigation: {
@@ -71,10 +74,74 @@ $(document).ready(() => {
                 return '<li class="' + className +  '">' + (menu1[index]) + '</li>';
             },
         },
-        // autoplay: {
-        //     delay: 3500,
-        //     disableOnInteraction: false,
-        // }
+        autoplay: {
+            delay: 90000,
+            disableOnInteraction: false,
+        }
+      });
+
+
+      var swiper = new Swiper('.swiper-container2', {
+        loop: false,
+        slidesPerView: 1,
+        centeredSlides: false,
+        navigation: {
+            nextEl: '.swiper-button-n',
+            prevEl: '.swiper-button-p',
+          },
+        pagination: {
+            el: '.swiper-pagination2',
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<li class="' + className +  '">' + (menu2[index]) + '</li>';
+            },
+        },
+        autoplay: {
+            delay: 90000,
+            disableOnInteraction: false,
+        }
+      });
+
+      var swiper = new Swiper('.swiper-container3', {
+        loop: false,
+        slidesPerView: 1,
+        centeredSlides: false,
+        navigation: {
+            nextEl: '.swiper-button-n',
+            prevEl: '.swiper-button-p',
+          },
+        pagination: {
+            el: '.swiper-pagination3',
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<li class="' + className +  '">' + (menu3[index]) + '</li>';
+            },
+        },
+        autoplay: {
+            delay: 90000,
+            disableOnInteraction: false,
+        }
+      });
+
+      var swiper = new Swiper('.swiper-container4', {
+        loop: false,
+        slidesPerView: 1,
+        centeredSlides: false,
+        navigation: {
+            nextEl: '.swiper-button-n',
+            prevEl: '.swiper-button-p',
+          },
+        pagination: {
+            el: '.swiper-pagination4',
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<li class="' + className +  '">' + (menu4[index]) + '</li>';
+            },
+        },
+        autoplay: {
+            delay: 90000,
+            disableOnInteraction: false,
+        }
       });
 
 

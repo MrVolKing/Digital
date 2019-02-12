@@ -15,3 +15,25 @@
         }
     }
 }
+
+
+@media screen and (max-width:769px){
+    .sect_none_bg{
+        padding: 40px 0 70px 0;
+
+        .block{
+            &__content{
+                flex-direction: column-reverse;
+            }
+    
+            &__right{
+                margin-bottom: 50px;
+            }
+    
+            &__left{
+                padding: 0;
+            }
+        }
+    }
+ 
+}

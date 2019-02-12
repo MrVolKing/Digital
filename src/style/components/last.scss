@@ -3,14 +3,24 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding: rem(101) 0 rem(119) 0;
-    
+    background-position: center;
 
+
+    &__title{
+        display: flex;
+        justify-content: center;
+        .title{
+            margin-bottom: 0;
+        }
+    }
+    
     &__subtitle{
         display: flex;
         justify-content: center;
         margin: rem(40) 0 rem(52) 0;
         span{
             color: $white;
+            font-size: rem(18);
         }
     }
 
@@ -20,3 +30,18 @@
     }
 }
 
+
+
+@media screen and (max-width:769px){
+    .last{
+        padding: 40px 0 50px 0;
+
+        &__subtitle{
+            margin: 20px 0 50px 0;
+            span{
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+    }
+}

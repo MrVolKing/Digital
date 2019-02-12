@@ -10,3 +10,21 @@
 }
 
 
+@media screen and (max-width:769px){
+    .block{
+        &__content{
+            flex-wrap: wrap;
+        }
+
+        &__left, &__right{
+            width: 100%;
+        }
+
+        .block_button{
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+    }
+}
+
