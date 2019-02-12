@@ -1,0 +1,42 @@
+.sect1{
+    background-image: url(../images/main.png);
+    padding: rem(137) 0 rem(138) 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .wrapper{
+        width: rem(1590);
+    }
+
+    
+
+    &__titleblock{
+        display: flex;
+        align-items: center;
+        margin-bottom: rem(37);
+        span{
+            text-align: center;
+            font-size: rem(75);
+            font-weight: 500;
+            color: $white;
+        }
+    }
+
+    &__button{
+        display: flex;
+        justify-content: center;
+        margin-bottom: rem(56);
+        .button:hover{
+            color: $white;
+        }
+    }
+
+    .btn_dwn{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:767px){
+    
+}

@@ -1,0 +1,12 @@
+.block{
+    &__content{
+        display: flex;
+    }
+
+    &__left, &__right{
+        width: 50%;
+    }
+
+}
+
+

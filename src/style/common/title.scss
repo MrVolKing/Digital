@@ -1,0 +1,11 @@
+.title{
+    color: $maintext;
+    font-weight: 500;
+    font-size: rem(65);
+    text-align: center;
+    margin-bottom: rem(83);
+    
+    &_white{
+        color: $white;
+    }
+}

@@ -1,0 +1,54 @@
+// adapt menu
+
+.adaptmenu{
+    transform: translateX(100%);
+    transition: 1s;
+    width: 75vw;
+    background-color: white;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    .content{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    &__paragraph{
+        justify-content: space-around;
+        height: 80%;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 80px;
+        a{
+            text-decoration: none;
+            font-size: 16px;
+            color: $maintext;
+        }
+    }
+
+    .close{
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+    @media screen and (max-width:767px){
+        .close{
+            width: 20px;
+            img{
+                width: 100%;
+            }
+        }
+        
+    }
+}
+
+.adaptmenu_active{
+    transform: translateX(0);
+}

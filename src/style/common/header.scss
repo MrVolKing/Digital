@@ -1,0 +1,90 @@
+header{
+    .wrapper{
+        width: rem(1708);
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        padding: rem(20) 0;
+
+        &__left, &__right{
+            display: flex;
+            align-items: center;
+            // width: 50%;
+        }
+
+        &__logo{
+            position: relative;
+            left: rem(-18);
+            margin-right: rem(66);
+        }
+
+        &__menu{
+            display: flex;
+        }
+
+        &__menu_item{
+            line-height: rem(48);
+            font-size: rem(20);
+            margin-right: rem(30);
+            a{
+                color: #8a9196;
+                &:hover{
+                    color: $brand_color;
+                }
+            }
+        }
+
+        &__demo{
+            .button{
+                width: rem(125) !important;
+            }
+            font-size: rem(16);
+            font-weight: 500;
+            line-height: rem(48);
+            text-transform: uppercase;
+            span{
+                margin-left: rem(10);
+            }
+        }
+
+        &__burger{
+            border-radius: 50%;
+            border: 1px solid #b7bfc4;
+            width: 49px;
+            height: 49px;
+            margin-left: rem(70);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    }
+}
+
+
+@media screen and (max-width:767px){
+    header{
+        .wrapper{
+            width: 100%;
+        }
+        .header{
+            padding: 10px 0;
+            &__logo{
+                margin-right: 0;
+                img{
+                    width: 75px;
+                    height: 70px;
+                }
+            }
+
+            &__menu{
+                display: none;
+            }
+
+            &__burger{
+                margin-left: 37px;
+            }
+        }
+    }
+}
