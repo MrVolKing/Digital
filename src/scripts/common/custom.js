@@ -59,7 +59,7 @@ $(document).ready(() => {
     var menu3 = ['Возможность использовать свои сервера для отправки email или <b>транзакционный API</b>', '<b>Продвинутый</b> планировщик массовых рассылок ', '<b>Inbox-мониторинг</b> и гибкое управление рассылками', '<b>Автоматическая проверка</b> базы по внутренним и внешним black-листам', '<b>Уникальная инфраструктура</b>, позволяющая AI подключиться к управлению маркетингом'];
     var menu4 = ['<b>Детальный контроль</b> дохода с каждой кампании, предложения, креатива', '<b>Контроль качества</b> доставки по каналам рассылок', '<b>Кастомные параметры</b> для отслеживания внешних событий и условий'];
     
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.swiper-container1', {
         loop: false,
         slidesPerView: 1,
         centeredSlides: false,
@@ -68,7 +68,7 @@ $(document).ready(() => {
             prevEl: '.swiper-button-p',
           },
         pagination: {
-            el: '.swiper-pagination',
+            el: '.swiper-pagination1',
             clickable: true,
             renderBullet: function (index, className) {
                 return '<li class="' + className +  '">' + (menu1[index]) + '</li>';
