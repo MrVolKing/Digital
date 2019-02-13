@@ -17,6 +17,16 @@
             bottom: rem(-22);
         }
     }
+
+    .block{
+        &__left{
+            width: 60%;
+        }
+    
+        &__right{
+            width: 40%;
+        }
+    }
 }
 
 @media screen and (max-width:769px){
