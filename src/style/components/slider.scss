@@ -138,6 +138,7 @@
         .bgr{
             width: 53px;
             height: 44px;
+            display: none;
         }
 
     }
@@ -145,6 +146,11 @@
     .custom_pagin{
         padding-top: 0;
         ul{
+
+            li{
+                margin-bottom: 34px;
+            }
+
             li:before{
                 margin-top: 5px !important;
             }

@@ -49,23 +49,147 @@ $(document).ready(() => {
 
 
     
-    // bullet
+    // auto play
+    
+    
+    const video_el_a_1 = document.getElementById('video_11');
+    const video_el_a_2 = document.getElementById('video_12');
+    const video_el_a_3 = document.getElementById('video_13');
+    const video_el_a_4 = document.getElementById('video_14');
 
-    // function pagin () {
-    //     if($('.swiper-pagination1 li:first-child').hasClass('swiper-pagination-bullet-active')) {
-    //         $('.swiper-paginat .p:first-child').css('background', 'red');
-    //     }
-    // }
+    const video_el_b_1 = document.getElementById('video_21');
+    const video_el_b_2 = document.getElementById('video_22');
+    const video_el_b_3 = document.getElementById('video_23');
+    const video_el_b_4 = document.getElementById('video_24');
+
+    const video_el_c_1 = document.getElementById('video_31');
+    const video_el_c_2 = document.getElementById('video_32');
+    const video_el_c_3 = document.getElementById('video_33');
+    const video_el_c_4 = document.getElementById('video_34');
+    const video_el_c_5 = document.getElementById('video_35');
+
+    const video_el_d_1 = document.getElementById('video_41');
+    const video_el_d_2 = document.getElementById('video_42');
+    const video_el_d_3 = document.getElementById('video_43');
+
+    // console.log($(window).height());
+
+    if ($(window).width() >= 800) {
+        $(window).scroll(function() {
+            if ($(this).scrollTop()  > 500){
+                video_el_a_1.play();
+                video_el_a_2.play();
+                video_el_a_3.play();
+                video_el_a_4.play();
+                // this.console.log('play')
+                // console.log($(window).scrollTop());
+    
+                video_el_b_1.pause();
+                video_el_b_2.pause();
+                video_el_b_3.pause();
+                video_el_b_4.pause();
+    
+                video_el_c_1.pause();
+                video_el_c_2.pause();
+                video_el_c_3.pause();
+                video_el_c_4.pause();
+                video_el_c_5.pause();
+    
+                video_el_d_1.pause();
+                video_el_d_2.pause();
+                video_el_d_3.pause();
+                
+            }
+            // else if($(this).scrollTop() > ($(this).height()) + ($(this).height()) ) {
+            //     video_el.pause();
+            //     console.log('pause');
+            // }
+        });
+    
+        $(window).scroll(function() {
+            if ($(this).scrollTop()  > 1370){
+                video_el_b_2.play();
+                video_el_b_1.play();
+                video_el_b_3.play();
+                video_el_b_4.play();
+                // this.console.log('play2')
+    
+                video_el_a_1.pause();
+                video_el_a_2.pause();
+                video_el_a_3.pause();
+                video_el_a_4.pause();
+                
+                video_el_c_1.pause();
+                video_el_c_2.pause();
+                video_el_c_3.pause();
+                video_el_c_4.pause();
+                video_el_c_5.pause();
+    
+                video_el_d_1.pause();
+                video_el_d_2.pause();
+                video_el_d_3.pause();
+            }
+        });
+    
+        $(window).scroll(function() {
+            if ($(this).scrollTop()  > 2200){
+                video_el_b_2.pause();
+                video_el_b_1.pause();
+                video_el_b_3.pause();
+                video_el_b_4.pause();
+    
+                video_el_a_1.pause();
+                video_el_a_2.pause();
+                video_el_a_3.pause();
+                video_el_a_4.pause();
+                
+                video_el_c_1.play();
+                video_el_c_2.play();
+                video_el_c_3.play();
+                video_el_c_4.play();
+                video_el_c_5.play();
+    
+                video_el_d_1.pause();
+                video_el_d_2.pause();
+                video_el_d_3.pause();
+            }
+        });
+    
+        $(window).scroll(function() {
+            if ($(this).scrollTop()  > 3000){
+                video_el_b_2.pause();
+                video_el_b_1.pause();
+                video_el_b_3.pause();
+                video_el_b_4.pause();
+    
+                video_el_a_1.pause();
+                video_el_a_2.pause();
+                video_el_a_3.pause();
+                video_el_a_4.pause();
+                
+                video_el_c_1.pause();
+                video_el_c_2.pause();
+                video_el_c_3.pause();
+                video_el_c_4.pause();
+                video_el_c_5.pause();
+    
+                video_el_d_1.play();
+                video_el_d_2.play();
+                video_el_d_3.play();
+            }
+        });
+    }
 
     
-    // pagin();
 
-    // $('.bgr').click(function() {
-    //     if($('.swiper-pagination1 li:first-child').hasClass('swiper-pagination-bullet-active')) {
-    //         $('.swiper-paginat .p:first-child').css('background', 'red');
-    //     }
-    // });
 
+
+    // console.log($(window).scrollTop());
+
+
+    // console.log(video_el);
+    // console.log($('#video_el'));
+    
 
 
 
